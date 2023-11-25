@@ -1,1 +1,20 @@
-<p>create works!</p>
+<h3>Create Player</h3>
+<form (ngSubmit)="onSubmit(createForm)">
+    <label for="shirtno">Shirt No:</label>
+    <input id="shirtno" type="text" required>
+
+    <label for="name">Name:</label>
+    <input id="name" type="text" required>
+
+    <label for="positionid">Position:</label>
+    <select id="positionid">
+    </select>
+
+    <label for="appearances">Appearances:</label>
+    <input id="appearances" type="text">
+
+    <label for="goals">Appearances:</label>
+    <input id="goals" type="text">
+
+    <button type="submit" >Create</button>
+</form>

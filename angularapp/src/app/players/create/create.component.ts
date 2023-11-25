@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -11,8 +11,20 @@ export class CreateComponent implements OnInit {
   constructor(private fb:FormBuilder) { }
   createForm=this.fb.group
   (
-    {shirno:}
+    {
+      shirno:['',Validators.required],
+      name:['',Validators.required],
+      positionid:['',Validators.required],
+      appearances:['',Validators.required],
+      goals:['',Validators.required],
+
+
+    }
   )
+  onSumit(c:FormGroup)
+  {
+
+  }
 
   ngOnInit(): void {
   }

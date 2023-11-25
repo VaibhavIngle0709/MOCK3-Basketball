@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+
+@Component({
+  selector: 'app-create',
+  templateUrl: './create.component.html',
+  styleUrls: ['./create.component.css']
+})
+export class CreateComponent implements OnInit {
+
+  constructor(private fb:FormBuilder) { }
+  createForm=this.fb.group
+  (
+    {shirno:}
+  )
+
+  ngOnInit(): void {
+  }
+
+}

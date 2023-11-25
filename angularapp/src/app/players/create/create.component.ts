@@ -12,7 +12,7 @@ export class CreateComponent implements OnInit {
   createForm=this.fb.group
   (
     {
-      shirno:['',Validators.required],
+      shirtno:['',Validators.required],
       name:['',Validators.required],
       positionid:['',Validators.required],
       appearances:['',Validators.required],
@@ -21,7 +21,7 @@ export class CreateComponent implements OnInit {
 
     }
   )
-  onSumit(c:FormGroup)
+  onSubmit()
   {
 
   }

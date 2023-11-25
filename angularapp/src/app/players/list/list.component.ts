@@ -8,7 +8,7 @@ import { PlayersService } from 'src/app/services/players.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  players:Player[]
+  players:Player[]=[]
   constructor(private palayerservice:PlayersService) { }
 
   deletePlayer(id:number)

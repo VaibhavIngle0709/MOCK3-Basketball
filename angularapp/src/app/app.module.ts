@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { CreateComponent } from './players/create/create.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DetailsComponent } from './players/details/details.component';
+import { ListComponent } from './players/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavmenuComponent,
-    CreateComponent
+    CreateComponent,
+    DetailsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

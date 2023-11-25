@@ -13,9 +13,9 @@ getPlayers():Observable<any[]>
 {
   return this.httpclient.get<any[]>(this.apiURL+"/players")
 }
-getPlayer(id:number):Observable<Player>
+getPlayer(id:number):Observable<any>
 {
-  return this.httpclient.get<Player>(this.apiURL)
+  return this.httpclient.get<any>(this.apiURL)
 }
 createPlayer(player:Player):Observable<Player>
 {

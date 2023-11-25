@@ -11,6 +11,10 @@ export class ListComponent implements OnInit {
   players:Player[]
   constructor(private palayerservice:PlayersService) { }
 
+  deletePlayer(id:number)
+  {
+
+  }
   ngOnInit(): void {
 
     this.palayerservice.getPlayers().subscribe(data=>{this.players.push(...data)})
